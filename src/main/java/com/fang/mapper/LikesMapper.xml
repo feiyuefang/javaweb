@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fang.mapper.LikesMapper" >
+  <resultMap id="BaseResultMap" type="com.fang.pojo.Likes" >
+    <id column="to_talk" property="toTalk" jdbcType="INTEGER" />
+    <id column="from_uid" property="fromUid" jdbcType="VARCHAR" />
+    <result column="lid" property="lid" jdbcType="INTEGER" />
+    <result column="time" property="time" jdbcType="TIMESTAMP" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    to_talk, from_uid, lid, time, status
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.fang.pojo.LikesExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from likes
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.fang.pojo.LikesKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from likes
+    where to_talk = #{toTalk,jdbcType=INTEGER}
+      and from_uid = #{fromUid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.fang.pojo.LikesKey" >
+    delete from likes
+    where to_talk = #{toTalk,jdbcType=INTEGER}
+      and from_uid = #{fromUid,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.fang.pojo.LikesExample" >
+    delete from likes
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.fang.pojo.Likes" >
+    insert into likes (to_talk, from_uid, lid, 
+      time, status)
+    values (#{toTalk,jdbcType=INTEGER}, #{fromUid,jdbcType=VARCHAR}, #{lid,jdbcType=INTEGER}, 
+      #{time,jdbcType=TIMESTAMP}, #{status,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.fang.pojo.Likes" >
+    insert into likes
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="toTalk != null" >
+        to_talk,
+      </if>
+      <if test="fromUid != null" >
+        from_uid,
+      </if>
+      <if test="lid != null" >
+        lid,
+      </if>
+      <if test="time != null" >
+        time,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="toTalk != null" >
+        #{toTalk,jdbcType=INTEGER},
+      </if>
+      <if test="fromUid != null" >
+        #{fromUid,jdbcType=VARCHAR},
+      </if>
+      <if test="lid != null" >
+        #{lid,jdbcType=INTEGER},
+      </if>
+      <if test="time != null" >
+        #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.fang.pojo.LikesExample" resultType="java.lang.Integer" >
+    select count(*) from likes
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update likes
+    <set >
+      <if test="record.toTalk != null" >
+        to_talk = #{record.toTalk,jdbcType=INTEGER},
+      </if>
+      <if test="record.fromUid != null" >
+        from_uid = #{record.fromUid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lid != null" >
+        lid = #{record.lid,jdbcType=INTEGER},
+      </if>
+      <if test="record.time != null" >
+        time = #{record.time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.status != null" >
+        status = #{record.status,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update likes
+    set to_talk = #{record.toTalk,jdbcType=INTEGER},
+      from_uid = #{record.fromUid,jdbcType=VARCHAR},
+      lid = #{record.lid,jdbcType=INTEGER},
+      time = #{record.time,jdbcType=TIMESTAMP},
+      status = #{record.status,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.fang.pojo.Likes" >
+    update likes
+    <set >
+      <if test="lid != null" >
+        lid = #{lid,jdbcType=INTEGER},
+      </if>
+      <if test="time != null" >
+        time = #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+    </set>
+    where to_talk = #{toTalk,jdbcType=INTEGER}
+      and from_uid = #{fromUid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.fang.pojo.Likes" >
+    update likes
+    set lid = #{lid,jdbcType=INTEGER},
+      time = #{time,jdbcType=TIMESTAMP},
+      status = #{status,jdbcType=INTEGER}
+    where to_talk = #{toTalk,jdbcType=INTEGER}
+      and from_uid = #{fromUid,jdbcType=VARCHAR}
+  </update>
+</mapper>

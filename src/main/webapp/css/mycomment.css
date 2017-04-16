@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+.mytitle {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 10px;
+	margin-top:10px;
+	color: red;
+}
+
+.mycomms {
+	width: 500px;
+	margin-top: 10px;
+}
+.mycom{
+	border: 1px dotted black;
+	margin-top: 10px;
+}
+.mycon {
+	width: 500px;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.comname {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: -10px;
+}
+
+.commtime {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-left: -65px;
+	margin-bottom: 10px;
+}
+
+.head {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.myc {
+	width: 100%;
+	height: 80px;
+	background-color: #ebeaea;
+	text-align: center;
+	line-height: 80px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.myc:hover {
+	background-color: #c0c0c0;
+}

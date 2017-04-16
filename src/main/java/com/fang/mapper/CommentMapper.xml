@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fang.mapper.CommentMapper" >
+  <resultMap id="BaseResultMap" type="com.fang.pojo.Comment" >
+    <id column="cid" property="cid" jdbcType="INTEGER" />
+    <result column="from_uid" property="fromUid" jdbcType="VARCHAR" />
+    <result column="to_talk" property="toTalk" jdbcType="INTEGER" />
+    <result column="content" property="content" jdbcType="CHAR" />
+    <result column="time" property="time" jdbcType="TIMESTAMP" />
+    <result column="parent_cid" property="parentCid" jdbcType="INTEGER" />
+    <result column="state" property="state" jdbcType="TINYINT" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    cid, from_uid, to_talk, content, time, parent_cid, state
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.fang.pojo.CommentExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from comment
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause} desc
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from comment
+    where cid = #{cid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from comment
+    where cid = #{cid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.fang.pojo.CommentExample" >
+    delete from comment
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.fang.pojo.Comment" >
+    insert into comment (cid, from_uid, to_talk, 
+      content, time, parent_cid, 
+      state)
+    values (#{cid,jdbcType=INTEGER}, #{fromUid,jdbcType=VARCHAR}, #{toTalk,jdbcType=INTEGER}, 
+      #{content,jdbcType=CHAR}, #{time,jdbcType=TIMESTAMP}, #{parentCid,jdbcType=INTEGER}, 
+      #{state,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.fang.pojo.Comment" >
+    insert into comment
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="cid != null" >
+        cid,
+      </if>
+      <if test="fromUid != null" >
+        from_uid,
+      </if>
+      <if test="toTalk != null" >
+        to_talk,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+      <if test="time != null" >
+        time,
+      </if>
+      <if test="parentCid != null" >
+        parent_cid,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="cid != null" >
+        #{cid,jdbcType=INTEGER},
+      </if>
+      <if test="fromUid != null" >
+        #{fromUid,jdbcType=VARCHAR},
+      </if>
+      <if test="toTalk != null" >
+        #{toTalk,jdbcType=INTEGER},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=CHAR},
+      </if>
+      <if test="time != null" >
+        #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="parentCid != null" >
+        #{parentCid,jdbcType=INTEGER},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.fang.pojo.CommentExample" resultType="java.lang.Integer" >
+    select count(*) from comment
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update comment
+    <set >
+      <if test="record.cid != null" >
+        cid = #{record.cid,jdbcType=INTEGER},
+      </if>
+      <if test="record.fromUid != null" >
+        from_uid = #{record.fromUid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.toTalk != null" >
+        to_talk = #{record.toTalk,jdbcType=INTEGER},
+      </if>
+      <if test="record.content != null" >
+        content = #{record.content,jdbcType=CHAR},
+      </if>
+      <if test="record.time != null" >
+        time = #{record.time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.parentCid != null" >
+        parent_cid = #{record.parentCid,jdbcType=INTEGER},
+      </if>
+      <if test="record.state != null" >
+        state = #{record.state,jdbcType=TINYINT},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update comment
+    set cid = #{record.cid,jdbcType=INTEGER},
+      from_uid = #{record.fromUid,jdbcType=VARCHAR},
+      to_talk = #{record.toTalk,jdbcType=INTEGER},
+      content = #{record.content,jdbcType=CHAR},
+      time = #{record.time,jdbcType=TIMESTAMP},
+      parent_cid = #{record.parentCid,jdbcType=INTEGER},
+      state = #{record.state,jdbcType=TINYINT}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.fang.pojo.Comment" >
+    update comment
+    <set >
+      <if test="fromUid != null" >
+        from_uid = #{fromUid,jdbcType=VARCHAR},
+      </if>
+      <if test="toTalk != null" >
+        to_talk = #{toTalk,jdbcType=INTEGER},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=CHAR},
+      </if>
+      <if test="time != null" >
+        time = #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="parentCid != null" >
+        parent_cid = #{parentCid,jdbcType=INTEGER},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=TINYINT},
+      </if>
+    </set>
+    where cid = #{cid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.fang.pojo.Comment" >
+    update comment
+    set from_uid = #{fromUid,jdbcType=VARCHAR},
+      to_talk = #{toTalk,jdbcType=INTEGER},
+      content = #{content,jdbcType=CHAR},
+      time = #{time,jdbcType=TIMESTAMP},
+      parent_cid = #{parentCid,jdbcType=INTEGER},
+      state = #{state,jdbcType=TINYINT}
+    where cid = #{cid,jdbcType=INTEGER}
+  </update>
+</mapper>

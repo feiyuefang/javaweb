@@ -1,0 +1,1030 @@
+@CHARSET "UTF-8";
+form {
+    padding-top: 20px;
+}
+.red {
+    color: #FF6666;
+}
+.bg_error {
+    background: url("http://id3.idqqimg.com/zc/chs/img/input_error.png?v=10030") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 35px;
+    width: 300px;
+}
+.year_bg_error {
+    background: url("http://id3.idqqimg.com/zc/chs/img/input_error.png?v=10030") no-repeat scroll 0 -36px transparent;
+    border: medium none;
+    height: 23px;
+    width: 106px;
+}
+.month_day_bg_error {
+    background: url("http://id3.idqqimg.com/zc/chs/img/input_error.png?v=10030") no-repeat scroll -107px -36px transparent;
+}
+.box .ipt_box .ipt_self .self_email_bg_error {
+    background: url("http://id3.idqqimg.com/zc/chs/img/input_error.png?v=10030") no-repeat scroll 0 -114px transparent;
+}
+.box_9 .code_bg .code_ipt_error {
+    background: url("http://id3.idqqimg.com/zc/chs/img/input_error.png?v=10030") no-repeat scroll 0 -60px transparent;
+}
+.box {
+    clear: both;
+    height: auto;
+}
+.box .item {
+    float: left;
+    font-size: 14px;
+    height: 44px;
+    line-height: 20px;
+    padding-right: 10px;
+    padding-top: 6px;
+    text-align: right;
+    width: 179px;
+}
+.box .ipt_box {
+    float: left;
+    height: 50px;
+    position: relative;
+    width: 306px;
+}
+.box .ipt_box input.txt {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 14px;
+    height: 19px;
+    line-height: 18px;
+    padding: 8px;
+    width: 284px;
+}
+.box .ipt_box input.focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 -35px transparent;
+}
+.box .ipt_box input.new_txt {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    padding: 8px;
+    width: 284px;
+}
+.box .ipt_box .bg_txt {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 35px;
+    width: 300px;
+}
+.box .ipt_box .bg_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 -35px transparent;
+}
+.box .ipt_box input.radio {
+    visibility: hidden;
+}
+.box .info {
+    float: left;
+    height: 40px;
+    width: 236px;
+}
+.box .nopadding {
+    padding-left: 0;
+    width: 306px;
+}
+.box .error {
+    background: url("http://id3.idqqimg.com/zc/chs/img/error.png") no-repeat scroll 0 11px transparent;
+    color: #FF6666;
+    padding-left: 14px;
+}
+.box .ok {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ok.png") no-repeat scroll 0 11px transparent;
+    color: #48A309;
+    padding-left: 14px;
+}
+.box .tip {
+    background: none repeat scroll 0 0 transparent;
+    color: #808080;
+}
+.info table {
+    margin-left: 6px;
+}
+.info td {
+    height: 35px;
+    vertical-align: middle;
+    width: 233px;
+}
+.box_1 .item {
+    height: 40px;
+    padding-top: 0;
+}
+.box_1 .ipt_box {
+    height: 40px;
+}
+.box_1 .info {
+    height: 40px;
+    padding-top: 0;
+}
+.box .method_box {
+    padding-left: 0;
+    width: 306px;
+}
+.box .method_box a {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -321px transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 6px;
+    padding-left: 20px;
+}
+.box .method_box a.checked {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -353px transparent;
+}
+.box .ipt_box .ipt_other {
+    height: 50px;
+    position: relative;
+}
+.box .ipt_box .ipt_self {
+    height: 50px;
+    position: relative;
+}
+.box .ipt_box .ipt_self input {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 -176px transparent;
+    border: medium none;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 19px;
+    line-height: 18px;
+    margin-right: 4px;
+    padding: 8px;
+    width: 181px;
+}
+.box .ipt_box .ipt_self input.focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 -211px transparent;
+}
+.box .ipt_box .ipt_self .outer {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -166px -70px transparent;
+    cursor: default;
+    float: left;
+    height: 35px;
+    position: relative;
+    width: 99px;
+}
+.box .ipt_box .ipt_self .outer div {
+    color: #696C6E;
+    font-size: 12px;
+    height: 19px;
+    line-height: 19px;
+    outline: medium none;
+    padding: 8px 0 8px 3px;
+}
+.box .ipt_box .ipt_self .outer div.focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -166px -105px transparent;
+}
+.box .ipt_box .ipt_self .outer ul {
+    background: none repeat scroll 0 0 #F3F9FC;
+    border: 1px solid #57A8E4;
+    left: 0;
+    position: absolute;
+    top: 35px;
+    width: 97px;
+}
+.box .ipt_box .ipt_self .outer ul li {
+    cursor: default;
+    line-height: 20px;
+}
+.box .ipt_box .ipt_self .outer ul li {
+    cursor: default;
+    line-height: 20px;
+}
+.box .ipt_box .ipt_self .outer ul li.hover {
+    background: none repeat scroll 0 0 #57A8E4;
+}
+.sea_area_value_bg, .sea_area_value_bg_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -166px -70px transparent;
+    cursor: default;
+    float: left;
+    height: 35px;
+    margin-right: 4px;
+    position: relative;
+    width: 99px;
+}
+.sea_area_value_bg_focus {
+    background-position: -166px -105px;
+}
+.sea_country_value {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #4199D7;
+    height: 35px;
+    padding-left: 5px;
+    width: 99px;
+}
+.sea_phone_num_bg, .sea_phone_num_bg_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 -176px transparent;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 19px;
+    line-height: 18px;
+    margin-right: 4px;
+    padding: 8px;
+    width: 181px;
+}
+.sea_phone_num_bg_focus {
+    background-position: 0 -211px;
+}
+.sea_phone_num_prefix {
+    color: #4199D7;
+    display: inline-block;
+    height: 19px;
+}
+.sea_phone_num {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 19px;
+    line-height: 18px;
+    width: 130px;
+}
+#sea_country_box {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    width: 103px;
+}
+#sea_country_ul {
+    background: none repeat scroll 0 0 #F3F9FC;
+    border: 1px solid #57A8E4;
+    cursor: auto;
+    left: 0;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1px;
+    position: absolute;
+    top: 35px;
+    width: 296px;
+    z-index: 100;
+}
+#sea_country_ul li {
+    cursor: default;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding-left: 3px;
+}
+.phone_num_placeholder {
+    color: #AAAAAA;
+    cursor: text;
+    height: 18px;
+    line-height: 18px;
+    padding: 8px 8px 8px 10px;
+    position: absolute;
+}
+.phone_box_land .sea_phone {
+    display: none;
+}
+.phone_box_sea .land_phone {
+    display: none;
+}
+.hover {
+    background: none repeat scroll 0 0 #57A8E4;
+}
+.box .self, .box .other {
+    padding-left: 0;
+    width: 306px;
+}
+.box .self .ipt_other {
+    display: none;
+}
+.box .self .ipt_self {
+    display: block;
+}
+.box .other .ipt_other {
+    display: block;
+    position: relative;
+}
+.box .other .ipt_other .other_email_ul {
+    background: none repeat scroll 0 0 #F3F9FC;
+    border: 1px solid #57A8E4;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 35px;
+    width: 298px;
+}
+.box .other .ipt_other .other_email_ul li {
+    cursor: default;
+    height: 20px;
+    line-height: 20px;
+}
+.box .other .ipt_other .other_email_ul p {
+    line-height: 20px;
+    padding-left: 2px;
+}
+.box .other .ipt_other .other_email_ul .hover {
+    background: none repeat scroll 0 0 #57A8E4;
+}
+.box .other .ipt_self {
+    display: none;
+}
+.box .other .ipt_self input, .box .other .ipt_self .outer {
+    background: none repeat scroll 0 0 transparent;
+}
+.box_2 .ipt_box {
+    z-index: 99;
+}
+.box_2 .ipt_box li {
+    padding-left: 2px;
+}
+.box_2 input {
+    ime-mode: disabled;
+}
+.box_4 .empty, .box_4 .rankLow, .box_4 .rankMiddle, .box_4 .rankHigh {
+    background: url("http://id3.idqqimg.com/zc/chs/img/pwd.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 15px;
+    padding-left: 70px;
+    width: 163px;
+}
+.box_4 .empty {
+    background-position: -6px 0;
+}
+.box_4 .rankLow {
+    background-position: 0 -100px;
+    color: #FF9C3A;
+}
+.box_4 .rankMiddle {
+    background-position: 0 -142px;
+    color: #61D01C;
+}
+.box_4 .rankHigh {
+    background-position: 0 -190px;
+    color: #61D01C;
+}
+.box .nick_ipt_box {
+    z-index: 0;
+}
+.box .sex_box a {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -322px transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+.box .sex_box a.unchecked {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -322px transparent;
+}
+.box .sex_box a.checked {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -354px transparent;
+}
+.box .sex_box a.unchecked_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -385px transparent;
+}
+.box .sex_box a.checked_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -417px transparent;
+}
+.box_6 .item {
+    height: 40px;
+    padding-top: 0;
+}
+.box_6 .ipt_box {
+    height: 40px;
+}
+.box_6 .info {
+    height: 40px;
+    padding-top: 0;
+}
+.box_6 .ok {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ok.png") no-repeat scroll 0 5px transparent;
+}
+.box_7 #birthday_type_value, .box_7 #year_value, .box_7 #month_value, .box_7 #day_value {
+    display: inline-block;
+    margin: 0;
+    padding-left: 5px;
+}
+.box_7 #birthday_type_value {
+    width: 55px;
+}
+.box_7 #year_value {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #4199D7;
+    height: 23px;
+    line-height: 23px;
+    width: 101px;
+}
+.box_7 #month_value {
+    border: medium none;
+    color: #4199D7;
+    height: 23px;
+    line-height: 23px;
+    width: 55px;
+}
+.box_7 #day_value {
+    border: medium none;
+    color: #4199D7;
+    height: 23px;
+    line-height: 23px;
+    width: 55px;
+}
+.box .ipt_box #birthday_type_box {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -197px -176px transparent;
+    float: left;
+    height: 23px;
+    margin-right: 4px;
+    width: 60px;
+}
+.box .ipt_box .birthday_type_box_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -197px -199px transparent;
+}
+.box .ipt_box #year_box {
+    float: left;
+    height: 23px;
+    margin-right: 4px;
+    width: 106px;
+}
+.box .ipt_box .year_bg_txt, .box .ipt_box .year_bg_focus {
+    height: 23px;
+    width: 106px;
+}
+.box .ipt_box .year_bg_txt {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 -246px transparent;
+}
+.box .ipt_box .year_bg_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 -269px transparent;
+}
+.box .ipt_box #month_box {
+    float: left;
+    height: 23px;
+    margin-right: 4px;
+    width: 60px;
+}
+.box .ipt_box .month_value {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -197px -176px transparent;
+}
+.box .ipt_box .month_value_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -197px -199px transparent;
+}
+.box .ipt_box #day_box {
+    float: left;
+    height: 23px;
+    width: 60px;
+}
+.box .ipt_box .day_value {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -197px -176px transparent;
+}
+.box .ipt_box .day_value_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -197px -199px transparent;
+}
+.box_7 .item {
+    height: 40px;
+    padding-top: 0;
+}
+.box_7 .ipt_box {
+    height: 40px;
+    z-index: 10;
+}
+.box_7 .info {
+    background-position: left 4px;
+    height: 40px;
+    line-height: 20px;
+    padding-top: 0;
+}
+.box_7 .info td {
+    height: 23px;
+}
+.box_7 .error, .box_8 .error {
+    background-position: 0 5px;
+}
+.box_7 .birthdayTip {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ok.png") no-repeat scroll 0 4px transparent;
+    color: #808080;
+    padding-left: 14px;
+}
+.box_7 .gray {
+    color: #808080;
+    line-height: 20px;
+    padding-left: 2px;
+}
+.box_7 .ipt_box .value_box {
+    height: 23px;
+    line-height: 23px;
+    margin-left: 5px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.box_7 .ipt_box li {
+    cursor: default;
+    line-height: 20px;
+    padding-left: 2px;
+}
+.box_7 .ipt_box li.hover {
+    background: none repeat scroll 0 0 #57A8E4;
+}
+.box_7 #birthday_type_box, .box_7 #year_box, .box_7 #month_box, .box_7 #day_box {
+    position: relative;
+}
+.focus_date {
+    background: url("http://id3.idqqimg.com/zc/chs/img/type.png") no-repeat scroll 0 0 transparent !important;
+}
+.box_7 #birthday_type_ul {
+    background: none repeat scroll 0 0 #F3F9FC;
+    border: 1px solid #57A8E4;
+    height: 40px;
+    left: 0;
+    overflow: hidden;
+    padding: 1px;
+    position: absolute;
+    top: 23px;
+    width: 56px;
+}
+.box_7 #year_ul {
+    background: none repeat scroll 0 0 #F3F9FC;
+    border: 1px solid #57A8E4;
+    height: 150px;
+    left: 0;
+    overflow-y: scroll;
+    padding: 1px;
+    position: absolute;
+    top: 23px;
+    width: 102px;
+}
+.box_7 #month_ul {
+    background: none repeat scroll 0 0 #F3F9FC;
+    border: 1px solid #57A8E4;
+    height: 150px;
+    left: 0;
+    overflow-y: scroll;
+    padding: 1px;
+    position: absolute;
+    top: 23px;
+    width: 56px;
+}
+.box_7 #day_ul {
+    background: none repeat scroll 0 0 #F3F9FC;
+    border: 1px solid #57A8E4;
+    height: 150px;
+    left: 0;
+    overflow-y: scroll;
+    padding: 1px;
+    position: absolute;
+    top: 23px;
+    width: 56px;
+}
+#country_box, #province_box, #city_box {
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    position: relative;
+    width: 101px;
+}
+.box .ipt_box .country_value, .box .ipt_box .province_value, .box .ipt_box .city_value {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #4199D7;
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 5px;
+    width: 92px;
+}
+.box .ipt_box .area_value_bg_focus, .box .ipt_box .area_value_bg {
+    height: 23px;
+    line-height: 23px;
+    width: 97px;
+}
+.box .ipt_box .area_value_bg_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -106px -269px transparent;
+}
+.box .ipt_box .area_value_bg {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -106px -246px transparent;
+}
+.box .ipt_box #country_box ul, .box .ipt_box #province_box ul, .box .ipt_box #city_box ul {
+    background: none repeat scroll 0 0 #F3F9FC;
+    border: 1px solid #57A8E4;
+    cursor: auto;
+    left: 0;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1px;
+    position: absolute;
+    top: 23px;
+}
+.box .ipt_box #country_box .noSearchResult, .box .ipt_box #province_box .noSearchResult, .box .ipt_box #city_box .noSearchResult {
+    background: none repeat scroll 0 0 #F3F9FC;
+    border: 1px solid #57A8E4;
+    cursor: auto;
+    height: 20px;
+    left: 0;
+    overflow: hidden;
+    padding: 1px;
+    position: absolute;
+    top: 23px;
+}
+.box .ipt_box .disable_box {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 -397px transparent;
+}
+.box_8 .ipt_box li {
+    padding-left: 3px;
+}
+.box .ipt_box .value_box {
+    height: 23px;
+    line-height: 23px;
+    margin-left: 5px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.box_8 .item {
+    height: 40px;
+    padding-top: 0;
+}
+.box_8 .ipt_box {
+    height: 40px;
+    z-index: 9;
+}
+.box_8 .info {
+    height: 40px;
+    padding-top: 0;
+}
+.box_8 .info td {
+    height: 23px;
+}
+.box_8 .error {
+}
+.box_8 .ok {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ok.png") no-repeat scroll 0 6px transparent;
+    padding-left: 14px;
+}
+.box .ipt_box #country_box ul {
+    width: 163px;
+}
+.box .ipt_box #province_box ul {
+    width: 93px;
+}
+.box .ipt_box #city_box ul {
+    width: 93px;
+}
+.box .ipt_box #country_box ul li, .box .ipt_box #province_box ul li, .box .ipt_box #city_box ul li {
+    cursor: default;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.box .ipt_box #country_box ul li.hover, .box .ipt_box #province_box ul li.hover, .box .ipt_box #city_box ul li.hover {
+    background: none repeat scroll 0 0 #57A8E4;
+}
+.focus_loc {
+    background: url("http://id3.idqqimg.com/zc/chs/img/type.png") no-repeat scroll 0 0 transparent !important;
+}
+.box_9 .item {
+    height: 49px;
+    padding-top: 15px;
+}
+.box_9 .ipt_box {
+    padding-left: 0;
+    width: 306px;
+}
+.box_9 .ipt_box input {
+    font-weight: bold;
+}
+.box_9 .code_bg {
+    height: 64px;
+}
+.box_9 .code_bg input {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") repeat scroll 0 -70px transparent;
+    border: medium none;
+    float: left;
+    font-size: 24px;
+    height: 37px;
+    line-height: 38px;
+    padding: 8px;
+    width: 150px;
+}
+.box_9 .code_bg input.focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") repeat scroll 0 -123px transparent;
+}
+.box_9 .info {
+    height: 74px;
+    padding: 0;
+    width: 248px;
+}
+.box_9 input {
+    font-family: Verdana,Geneva,sans-serif;
+    ime-mode: disabled;
+}
+.box_9 .info span {
+    background: url("http://id3.idqqimg.com/zc/chs/img/error.png") no-repeat scroll 0 1px transparent;
+    color: #FF0000;
+    display: inline-block;
+    padding-left: 15px;
+}
+.box_9 .info span.change {
+    background: none repeat scroll 0 0 transparent;
+    color: #4199D7;
+    cursor: pointer;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.box_9 .info span.tips {
+    background: none repeat scroll 0 0 transparent;
+    color: #808080;
+    padding-left: 0;
+}
+.box_10 .item {
+    height: 25px;
+    padding-top: 0;
+}
+.box_10 .qzone_box {
+    height: 25px;
+}
+.box_10 .qzone_box a {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -253px transparent;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 20px;
+}
+.box_10 .qzone_box .checked {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -292px transparent;
+    color: inherit;
+}
+.box_10 .qzone_box .unchecked {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -253px transparent;
+    color: #808080;
+}
+.box_10 .qzone_box .checked_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -478px transparent;
+    color: inherit;
+}
+.box_10 .qzone_box .unchecked_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -446px transparent;
+    color: #808080;
+}
+.box_11 {
+    height: 90px;
+}
+.box_11 .ipt_box {
+    background: none repeat scroll 0 0 transparent;
+    height: 90px;
+    padding-left: 0;
+}
+
+.box_11 .ipt_box .agree_box .a_1 {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -253px transparent;
+    color: #FF0000;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+.box_11 .ipt_box .agree_box .checked {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -292px transparent;
+    color: #000000;
+}
+.box_11 .ipt_box .agree_box .unchecked {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -253px transparent;
+    color: #808080;
+}
+.box_11 .ipt_box .agree_box .checked_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -478px transparent;
+    color: #000000;
+}
+.box_11 .ipt_box .agree_box .unchecked_focus {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll -300px -446px transparent;
+    color: #808080;
+}
+.box_11 .ipt_box .agree_box .x_box {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    top: 3px;
+}
+.box_11 .ipt_box .agree_box .x_box div {
+    background: url("http://id3.idqqimg.com/zc/chs/img/arrow_01.png") no-repeat scroll right 0 #F8FDFF;
+    height: 13px;
+    position: relative;
+    width: 19px;
+    z-index: 1;
+}
+.box_11 .ipt_box .agree_box .x_box div {
+    background-position: right 0;
+}
+.box_11 .ipt_box .agree_box .x_box p {
+    border: 1px solid #74B4EF;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 12px;
+    width: 161px;
+    z-index: 0;
+}
+.box_11 .ipt_box .agree_box .show div {
+    background-position: 0 0;
+}
+.box_11 .ipt_box .agree_box .show p {
+    display: block;
+    padding: 5px;
+}
+.box_11 .ipt_box .agree_box .show p a {
+    line-height: 20px;
+}
+.box_11 .ipt_box .submit input {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 -344px transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 22px/52px "微软雅黑";
+    height: 52px;
+    text-align: center;
+    width: 183px;
+}
+.box_11 .ipt_box .submit input.disabled {
+    background: url("http://id3.idqqimg.com/zc/chs/img/ipt.png?v=10030") no-repeat scroll 0 -292px transparent;
+    color: #888888;
+    cursor: default;
+}
+.cover {
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 900px;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.box_ {
+    height: 0;
+    margin: 0 auto;
+    position: relative;
+    width: 900px;
+    z-index: 101;
+}
+.chk_email_code {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #74B4EF;
+    display: none;
+    height: 280px;
+    left: 250px;
+    position: absolute;
+    top: 200px;
+    width: 420px;
+    z-index: 100;
+}
+.chk_email_code a.close {
+    background: url("http://id3.idqqimg.com/zc/chs/img/close.png") no-repeat scroll center center transparent;
+    cursor: pointer;
+    height: 32px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 32px;
+}
+.chk_email_code h2 {
+    background: none repeat scroll 0 0 #B4D8F3;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+}
+.chk_email_code .div_1 {
+    background: url("http://id3.idqqimg.com/zc/chs/img/error.png") no-repeat scroll 50px center transparent;
+    color: #FF0000;
+    font-weight: bold;
+    margin: 30px 0;
+    padding-left: 70px;
+}
+.chk_email_code .div_2 {
+    background: url("http://id3.idqqimg.com/zc/chs/img/email_code_ipt.png") no-repeat scroll 130px top transparent;
+    height: 22px;
+}
+.chk_email_code .div_2 span {
+    display: inline-block;
+    line-height: 22px;
+    padding-right: 2px;
+    text-align: right;
+    width: 130px;
+}
+.chk_email_code .div_2 input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    ime-mode: disabled;
+    width: 119px;
+}
+.chk_email_code .div_3 {
+    line-height: 30px;
+    padding-left: 130px;
+}
+.chk_email_code .div_3 input {
+    background: url("http://id3.idqqimg.com/zc/chs/img/mail_code_btn_chs.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 22px;
+    width: 55px;
+}
+.chk_email_code .div_3 a, .chk_email_code .div_3 img {
+    cursor: pointer;
+}
+#email_code_ipt_err {
+    color: #FF0000;
+    display: none;
+}
+a, .box_11 {
+    outline: medium none;
+}
+.method_box .tahoma {
+    color: #84A8C8;
+    font-family: Tahoma;
+    height: 18px;
+    line-height: 18px;
+}
+.method_box a:hover .tahoma {
+    color: #4199D7;
+}
+.method_box a:hover {
+    color: #4199D7;
+}
+#password, #password_again {
+    font-family: Arial,Helvetica,sans-serif;
+}
+.red_bg {
+    background-color: #CC3300;
+    color: #FFFFFF;
+    height: 20px;
+    line-height: 20px;
+}
+.paopao {
+    background: url("http://id3.idqqimg.com/zc/chs/img/pao_c.png") repeat-x scroll 0 0 transparent;
+    height: 31px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 10;
+}
+.paopao .p_l {
+    background: url("http://id3.idqqimg.com/zc/chs/img/pao_l.png") no-repeat scroll 0 0 transparent;
+    color: #666666;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    height: 31px;
+    line-height: 24px;
+    padding-left: 8px;
+    position: absolute;
+    top: 0;
+}
+.paopao .p_r {
+    background: url("http://id3.idqqimg.com/zc/chs/img/pao_r.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 31px;
+    position: absolute;
+    right: 0;
+    width: 5px;
+}
+.pwd_info {
+    position: relative;
+}
+.pwd_tips {
+    background: url("http://id3.idqqimg.com/zc/chs/img/pwd.png") no-repeat scroll 0 0 transparent;
+    height: 71px;
+    padding-top: 6px;
+    position: absolute;
+    top: -18px;
+    width: 158px;
+}
+.pwd_tips div {
+    height: 22px;
+    line-height: 22px;
+    margin-left: 15px;
+    padding-left: 18px;
+}
+.pwd_tips .default {
+    background: url("http://id3.idqqimg.com/zc/chs/img/pwd.png") no-repeat scroll 0 -215px transparent;
+}
+.pwd_tips .yes {
+    background: url("http://id3.idqqimg.com/zc/chs/img/pwd.png") no-repeat scroll 0 -247px transparent;
+}
+.pwd_tips .no {
+    background: url("http://id3.idqqimg.com/zc/chs/img/pwd.png") no-repeat scroll 0 -281px transparent;
+}
+.pwd_info .password_info {
+    color: #808080;
+    vertical-align: top;
+}
+.phone_tips {
+    left: 190px;
+    top: -31px;
+    width: 240px;
+    z-index: 100;
+}
+#phone_box {
+    position: relative;
+}

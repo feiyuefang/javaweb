@@ -1,0 +1,359 @@
+@CHARSET "UTF-8";
+
+
+html {
+    font-family: Tahoma;
+    font-size: 62.5%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, button, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1.2rem;
+    line-height: 1.333;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: normal;
+}
+input[type="button"], input[type="submit"], select, button {
+    cursor: pointer;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+address, caption, cite, code, dfn, em, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+li {
+    list-style: none outside none;
+}
+caption, th {
+    text-align: left;
+}
+q:before, q:after {
+    content: "";
+}
+abbr, acronym {
+    border: 0 none;
+    font-variant: normal;
+}
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+fieldset, img, a img, iframe {
+    border-style: none;
+    border-width: 0;
+}
+iframe {
+    overflow: hidden;
+}
+img {
+}
+textarea {
+    overflow-y: auto;
+    resize: vertical;
+}
+legend {
+    color: #000000;
+}
+a {
+    text-decoration: none;
+}
+hr {
+    height: 0;
+}
+label {
+    cursor: pointer;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.os_mac {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3";
+}
+.ui_icon {
+    display: inline-block;
+}
+.ui_sep_line {
+    color: #888888;
+    margin: 0 10px;
+}
+.icon_qzone_logo {
+    background-image: url("../images/logo.png");
+    height: 49px;
+    width: 141px;
+}
+
+.none {
+    display: none !important;
+}
+
+.icon_qzone_logo a{
+	display: block;
+	width: 141px;
+	height: 49px;
+}
+
+.img_slogan {
+    background-image: url("../images/slogan.png");
+    display: block;
+    height: 235px;
+    width: 450px;
+}
+.ui_hide {
+    visibility: hidden;
+}
+.ui_btn {
+    background-color: transparent;
+    border: 0 none;
+    overflow: hidden;
+}
+.btn_login {
+    background-image: url("../images/qzonelogin.png");
+    background-position: 0 0;
+    height: 41px;
+    width: 118px;
+}
+.ui_textinput {
+    background-color: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    font-family: "Arial";
+    font-size: 16px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 12px 10px;
+    vertical-align: top;
+    width: 243px;
+}
+.ui_textinput_S {
+    width: 100px;
+}
+.ui_textinput {
+    transition-duration: 0.3s, 0.3s;
+    transition-property: border-color, box-shadow;
+    transition-timing-function: linear;
+}
+.ui_textinput_focus, .ui_textinput:focus {
+    border-color: #56BDF3;
+    box-shadow: 0 0 5px rgba(84, 189, 242, 0.6), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    outline: 0 none;
+}
+.clearfix {
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+body {
+    font-family: "Microsoft Yahei";
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.lay_wrap {
+    color: #FFFFFF;
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+}
+.lay_wrap a {
+    color: #FFFFFF;
+}
+.lay_wrap a:hover {
+    text-decoration: underline;
+}
+.lay_wrap .lay_inner {
+    margin: 0 auto;
+    width: 750px;
+}
+.lay_wrap .lay_main {
+    color: #4B4A4A;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+.lay_wrap .lay_main a {
+    color: #4B4A4A;
+}
+.lay_wrap .lay_main .login_head {
+    margin-bottom: 50px;
+}
+.lay_wrap .lay_main .login_img {
+    float: left;
+    height: 235px;
+    overflow: hidden;
+    width: 450px;
+}
+.lay_wrap .lay_main .login_img .img_wrap {
+    display: inline-block;
+    height: 235px;
+    width: 450px;
+}
+.lay_wrap .lay_main .login_img img {
+    vertical-align: top;
+}
+.lay_wrap .lay_main .login_wrap {
+    float: right;
+    width: 265px;
+}
+.lay_wrap .lay_main .login_wrap .option_item {
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+.lay_wrap .lay_main .login_wrap .login_fast {
+    margin-bottom: 7px;
+}
+.lay_wrap .lay_main .login_form .form_item {
+    margin-bottom: 19px;
+    position: relative;
+}
+.lay_wrap .lay_main .login_form .form_item .ui_placeholder {
+    color: #979797;
+    cursor: text;
+    font-size: 16px;
+    height: 18px;
+    left: 2px;
+    line-height: 18px;
+    padding: 12px 10px;
+    position: absolute;
+    top: 0;
+}
+.lay_wrap .lay_main .login_form .form_item_error {
+    background: none repeat scroll 0 0 #FFFDE5;
+    border: 1px solid #FCEFB7;
+    color: #F48C12;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+}
+.lay_wrap .lay_main .login_form .form_item_error a {
+    color: #4B4A4A;
+}
+.lay_wrap .lay_main .login_form .form_item_code {
+    padding-bottom: 15px;
+}
+.lay_wrap .lay_main .login_form .item_code_wrap {
+    display: inline-block;
+    height: 44px;
+    margin-left: 10px;
+    position: relative;
+    vertical-align: top;
+    width: 130px;
+}
+.lay_wrap .lay_main .login_form .item_code_wrap .code_img {
+    height: 44px;
+    vertical-align: top;
+    width: 130px;
+}
+.lay_wrap .lay_main .login_form .item_code_wrap .code_refresh {
+    bottom: -25px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    position: absolute;
+}
+.lay_wrap .lay_foot {
+    bottom: 5%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.lay_wrap .lay_foot .login_device {
+    margin: 0 auto 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.lay_wrap .lay_foot .login_device li {
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+    vertical-align: top;
+    width: 60px;
+}
+.lay_wrap .lay_foot .login_device li.ui_line {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 21px;
+    margin: 10px 25px;
+    width: 1px;
+}
+.lay_wrap .lay_foot .login_device li a {
+    text-decoration: none;
+}
+.lay_wrap .lay_foot .login_device li .ui_icon {
+    vertical-align: top;
+}
+.lay_wrap .lay_foot .login_device li span {
+    display: block;
+    padding-top: 5px;
+}
+.lay_wrap .lay_foot .copyright {
+    text-align: center;
+}
+.lay_wrap .lay_foot .copyright p {
+    line-height: 22px;
+}
+.lay_background {
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.lay_background .lay_background_img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.lay_background .lay_background_img {
+    opacity: 0;
+    transition: opacity 0.8s ease 0s;
+}
+.lay_background .lay_background_img_fade_out {
+    opacity: 1;
+}
+.mode_dark .icon_qzone_logo {
+    background-image: url("img/icon_qzone_logo_dark.png?max_age=19830211&d=20121107123254");
+}
+.mode_dark .ui_sep_line {
+    color: #EEEEEE;
+}
+.mode_dark .img_slogan {
+    background-image: url("img/operate/slogan_dark.png?max_age=19830211&d=20121107123254");
+}
+.mode_dark .lay_wrap .lay_main {
+    color: #FFFFFF;
+}
+.mode_dark .lay_wrap .lay_main a {
+    color: #FFFFFF;
+}
+#GeneratedByCssGaga183 {
+    transform: rotate(2.01211e+13deg);
+}

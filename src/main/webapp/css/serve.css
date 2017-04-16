@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+body, div, p, h1, h2, li, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: none;
+    color: #333333;
+    font-family: Tahoma;
+    font-size: 12px;
+    line-height: 2;
+    margin: 15px 4px;
+}
+.protocol_wrap {
+    margin: 0 auto;
+    width: 686px;
+}
+.pt_title {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sub_t {
+    color: #FB7905;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-indent: 2em;
+}
+.pt_item {
+    margin-bottom: 10px;
+}
+.pt_item_r {
+    text-align: right;
+}
+.pt_item p {
+    text-indent: 2em;
+}
+.pt_item .b {
+    font-weight: 700;
+}

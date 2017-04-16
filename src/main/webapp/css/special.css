@@ -1,0 +1,78 @@
+@CHARSET "UTF-8";
+.specialLeft {
+	position: absolute;
+	width: 240px;
+	height: 300px;
+	margin-left: 530px;
+	border: 1px solid gray;
+	margin-top: 50px;
+}
+
+ul li {
+	list-style: none;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+/*清除浮动代码*/
+.clearfloat:after {
+	display: block;
+	clear: both;
+	contents: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+/*逻辑样式*/
+#tabs {
+	width: 100%;
+}
+
+#tabs .nav {
+	height: 35px;
+}
+
+#tabs .nav li {
+	width: 50%;
+	float: left;
+	background: #DDDDDD;
+	line-height: 35px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#tabs .nav li.active {
+	background: #400040;
+	color: #fff;
+}
+
+#tabs .contents {
+	border: 1px solid #ddd;
+	display: none;
+}
+
+#tabs .contents.active {
+	display: block;
+}
+.friend{
+	width: 60px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.specialname,.addspecial{
+	font-weight:bold;
+	font-size: 14px;
+}
+.addspecial:hover{
+	color:black;
+}
