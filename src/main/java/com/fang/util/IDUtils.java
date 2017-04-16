@@ -35,6 +35,7 @@ public class IDUtils {
 	
 	public static long tbUserId(){
 		long millis = System.currentTimeMillis();
+		//¡¢
 		return millis/100000;
 	}
 	
